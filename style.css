@@ -81,6 +81,7 @@ table
 	width:1024px;
 	border-collapse: collapse;
 	background-color: #87CEAA;
+	border: 2px solid black;
 }
 caption
 {
@@ -97,6 +98,8 @@ td{
 	text-align: center;
 	font-family: "Oswald", sans-serif;
 	font-style: bold;
+	padding: 10px;
+	border: 1px solid black;
 }
 .level{
 	color:crimson;
