@@ -11,15 +11,15 @@
  	position:relative;
  }
  h1{
- 	font-family: "Bookman Old Style", serif;
- 	font-size: 4.5em;
+ 	font-family: "Bookman Old Style", serif !important;
+ 	font-size: 4.5em !important;
  	color: white;
  	text-shadow: black 2px 1px 2px;
  	text-align: center;
  }
  h2{
- 	font-family: "Bookman Old Style", serif;
- 	font-size: 3.0em;
+ 	font-family: "Bookman Old Style", serif !important;
+ 	font-size: 3.0em !important;
  	color:#66CDAA;
  	text-shadow: black 2px 1px 2px;
  	text-align:center;
@@ -98,8 +98,24 @@ td{
 	font-family: "Oswald", sans-serif;
 	font-style: bold;
 }
-p{
+.level{
 	color:crimson;
 	font-size: 1.3em;
 	text-align: center;
+}
+#code_wrapper{
+	margin-top:70px !important;
+	margin:auto;
+	width:1024px !important;
+	padding:0 !important;
+}
+h3{
+	text-align: left;
+	font-size: 2.4em !important;
+	text-decoration: underline;
+	font-family: "Oswald", sans-serif !important;
+}
+.mySlides{
+	width:980px;
+	height:600px;
 }

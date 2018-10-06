@@ -2,6 +2,7 @@
 <html lang ="ru">
   <head>
   	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   	<link rel="shortcut icon" href="logolight.png" type="image/png">
     <meta charset="utf-8">
     <title>Junior Curriculum Vitae</title>
@@ -21,16 +22,63 @@
   	  <img id="photoface_img" src="portphoto_cropped.jpeg" alt="That's my face indeed" width="200px" height="200px">
     </div>
   	<div id="main">
-  		<div id="Skills_wrapper">
+  	  <div id="Contacts">
+  	  	<h3> My Contacts </h3>
+  	  	<div id="Phone"> <img src="phone.png" alt="Phone picture" width="50px" height="50px"> +375298463421 </div>
+  	  	<div id="Skype"> <img src="skype-logo.png" alt="Skype picture" width="50px" height="50px"> snaiper_lod </div>
+  	  	<div id="vk"> <img src="vk-logo.png" alt="VK picture" width="50px" height="50px">vk.com/evil_envi </div>
+  	  	<div id="GitHub"> <img src="github-logo.png" alt="VK picture" width="50px" height="50px">github.com/SnaiperLoD </div>
+  	  </div>
+  	  <div id="Objective">
+  	  	<h3> Objective </h3>
+  	  	<div>
+  	  	  <p>To learn more about fron-end development and start a career in IT-sphere
+  	  	  </p>
+  	  	</div>
+  	  <div>
   		<table id="Skills" cellpadding="10px" border="2px">
   			<caption>Skills</caption>
   			<tr>
-  				<td>C++<br><p>Basic</p></td><td>C#<br><p>Intermediate</p></td><td>HTML, CSS<br><p>Intermediate+</p></td>
+  				<td>C++<br><p class="level">Basic</p></td><td>C#<br><p class="level">Intermediate</p></td><td>HTML, CSS<br><p class="level">Intermediate+</p></td>
   			</tr>
   			<tr>
-  				<td>JS<br><p>Intermediate</p></td><td>Photoshop/Illustrator<br><p>Intermediate</p></td><td>Git<br><p>Basic</p></td>
+  				<td>JS<br><p class="level">Intermediate</p></td><td>Photoshop/Illustrator<br><p class="level">Intermediate</p></td><td>Git<br><p class="level">Basic</p></td>
   			</tr>
   		</table>
+  	  </div>
+  	  <div class="w3-content w3-display-container" id="codewrapper">
+  	  	<h3>My Code Examples</h3>
+  	  	<img class="mySlides" src="slide1.png" alt="Money-Exchange/JS">
+        <img class="mySlides" src="slide2.png" alt="Advanced-Zeros/JS">
+        <img class="mySlides" src="slide3.png" alt="justsomeclassery/C#">
+        <img class="mySlides" src="slide4.png" alt="Inventarisation/C#">
+        <div>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+  	  </div>
+  	  <div id="Summary">
+  	  	<p>Bunch of text about myself</p>
+  	  </div>
   	</div>
+  	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
   </body>
  </html>
