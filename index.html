@@ -32,9 +32,16 @@
   	  <div id="Objective">
   	  	<h3> Objective </h3>
   	  	<div>
-  	  	  <p>To learn more about fron-end development and start a career in IT-sphere
+  	  	  <p>To learn more about front-end development and start a career in IT-sphere.
   	  	  </p>
   	  	</div>
+  	  </div>
+  	  <div id="Summary">
+  	  	<h3> Summary </h3>
+  	  	<div>
+  	  		<p>Heres something about me</p>
+  	  	</div>
+  	  </div>
   	  <div>
   		<table id="Skills" cellpadding="10px" border="2px">
   			<caption>Skills</caption>
@@ -57,12 +64,44 @@
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
   	  </div>
-  	  <div id="Summary">
-  	  	<p>Bunch of text about myself</p>
+  	  <div id="Projects">
+  	  	<h3>My Projects</h3>
+  	  	<h4>•Calculator/C#</h4>
+  	  	<img src="calc.png" alt="calc lab">
+  	  	<h4>•Site</h4>
+  	  	<h4>•English Courses</h4>
+  	  	<div id="code">
+  	  		<a rel="nofollow" target="_blank" href="codecourses1.png">
+  	  		 <img src="codecourses1.png" alt="code">
+  	  	    </a>
+  	  		<a rel="nofollow" target="_blank" href="codecourses2.png">
+  	  		 <img src="codecourses2.png" alt="code">
+  	  	    </a>
+  	  	    <a rel="nofollow" target="_blank" href="codecourses3.png">
+  	  		 <img src="codecourses3.png" alt="code">
+  	  	    </a>
+  	  	    <a rel="nofollow" target="_blank" href="codecourses4.png">
+  	  		 <img src="codecourses4.png" alt="code">
+  	  	    </a>
+  	  	</div>
+  	  	<div id="pictures">
+  	  		<a rel="nofollow" target="_blank" href="imagecourses1.png">
+  	  		 <img src="imagecourses1.png" alt="code">
+  	  	    </a>
+  	  		<a rel="nofollow" target="_blank" href="imagecourses2.png">
+  	  		 <img src="imagecourses2.png" alt="code">
+  	  	    </a>
+  	  	    <a rel="nofollow" target="_blank" href="imagecourses3.png">
+  	  		 <img src="imagecourses3.png" alt="code">
+  	  	    </a>
+  	  	    <a rel="nofollow" target="_blank" href="imagecourses4.png">
+  	  		 <img src="imagecourses4.png" alt="code">
+  	  	    </a>
+
   	  </div>
   	</div>
   	<script>
-var slideIndex = 1;
+let slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -70,11 +109,12 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
+  let i;
+  let x = document.getElementsByClassName("mySlides");
+  const siz=x.length
+  if (n > siz) {slideIndex = 1}    
+  if (n < 1) {slideIndex = siz}
+  for (i = 0; i < siz; i++) {
      x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
