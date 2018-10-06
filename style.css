@@ -119,23 +119,23 @@ h3{
 	width:980px;
 	height:600px;
 }
-#code{
+.code{
 	float:left;
 	width:512px;
 }
-#code img{
+.code img{
 	margin: 2px 2px 2px 0px;
 	border: 2px solid black;
 }
-#pictures{
+.pictures{
 	float:right;
 	width:512px;
 }
-#pictures img{
+.pictures img{
 	margin:2px 0px 2px 2px;
 	border: 2px solid black;
 }
-#code img, #pictures img{
+.code img, .pictures img{
 	height: 300px;
 	width: 450px;
 }
